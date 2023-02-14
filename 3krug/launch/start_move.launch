@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="3krug" type="speedSender.py" name="speed_publisher" output="log" respawn="false"/>
+    <node pkg="3krug" type="odom.py" name="odomCalculator" output="log" respawn="false"/>
+    <node pkg="3krug" type="voice_control.py" name="voice_controller" output="log" respawn="false"/>
+    <node pkg="3krug" type="display_viz.py" name="display_controller" output="log" respawn="false"/>
+
+</launch>
