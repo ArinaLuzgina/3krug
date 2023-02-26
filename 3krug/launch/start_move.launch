@@ -6,11 +6,10 @@
     <node pkg="3krug" type="speedSender.py" name="speed_publisher" output="log" respawn="false"/>
     <node pkg="3krug" type="odom.py" name="odomCalculator" output="log" respawn="false"/>
     <node pkg="3krug" type="voice_control.py" name="voice_controller" output="log" respawn="false"/>
-    <node pkg="3krug" type="display_viz.py" name="display_controller" output="log" respawn="false"/>
-    <node pkg="3krug" type="kws_control.py" name="kws_control" output="log" respawn="false">
-        <param name="hmm" value="$(arg hmm)"/>
+    <node pkg="3krug" type="kws_control.py" name="kws_control" output="log" respawn="false"> 
+        <param name="hmm" value="$(arg hmm)"/> 
         <param name="dict" value="$(arg dict)"/>
         <param name="lm" value="$(arg lm)"/>
     </node>
-
+    <!-- <node pkg="3krug" type="display_viz.py" name="display_controller" output="log" respawn="false" /> -->
 </launch>
